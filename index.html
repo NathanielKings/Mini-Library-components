@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Component Library</title>
+    <link rel="stylesheet" href="styles/variables.css" />
+    <link rel="stylesheet" href="styles/buttons.css" />
+    <link rel="stylesheet" href="styles/inputs.css" />
+    <link rel="stylesheet" href="styles/cards.css" />
+    <link rel="stylesheet" href="styles/badges.css" />
+    <link rel="stylesheet" href="styles/alerts.css" />
+    <link rel="stylesheet" href="styles/navbar.css" />
+    <link rel="stylesheet" href="styles/modal.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div>Logo</div>
+      <div>
+        <a href="#">Home</a>
+        <a href="#">Components</a>
+        <a href="#">Contact</a>
+      </div>
+    </nav>
+
+    <main>
+      <h2>Buttons</h2>
+      <button class="button button-primary">Primary</button>
+      <button class="button button-secondary">Secondary</button>
+      <button class="button button-disabled">Disabled</button>
+
+      <h2>Inputs</h2>
+      <input type="text" class="input" placeholder="Normal input" />
+      <input type="text" class="input input-error" placeholder="Error input" />
+      <div class="error-text">This field is required</div>
+
+      <h2>Cards</h2>
+      <div class="card">This is a simple card</div>
+
+      <h2>Badges</h2>
+      <span class="badge badge-primary">Primary</span>
+      <span class="badge badge-success">Success</span>
+
+      <h2>Alerts</h2>
+      <div class="alert alert-success">Success alert</div>
+      <div class="alert alert-error">Error alert</div>
+
+      <h2>Modal</h2>
+      <button
+        class="button button-primary"
+        onclick="document.querySelector('.modal').classList.add('show')"
+      >
+        Open Modal
+      </button>
+
+      <div class="modal" onclick="this.classList.remove('show')">
+        <div class="modal-content" onclick="event.stopPropagation()">
+          <h3>Modal Title</h3>
+          <p>This is a modal.</p>
+          <button
+            class="button button-secondary"
+            onclick="document.querySelector('.modal').classList.remove('show')"
+          >
+            Close
+          </button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

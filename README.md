@@ -44,7 +44,7 @@ Getting Started
 
 Clone the repository:
 
-git clone https://github.com/yourusername/mini-component-library.git
+git clone https://github.com/nathanielkings/Mini-Library-components.git
 
 Open index.html in your browser.
 

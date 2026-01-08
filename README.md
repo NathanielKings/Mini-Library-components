@@ -1,4 +1,4 @@
-Mini Component Library
+# Mini Component Library
 
 A lightweight pure CSS component library showcasing reusable UI patterns. Built to practice consistent design systems, CSS variables, and predictable, reusable styles.
 
